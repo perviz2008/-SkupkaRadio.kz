@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #222;
+  color: white;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-container input, .auth-container button {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.7em;
+}
+
+.google-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

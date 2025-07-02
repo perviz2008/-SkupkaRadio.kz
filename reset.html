@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Восстановление пароля | RadioProdaja.kz</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <div class="auth-container" id="reset-step1">
+    <h2>Восстановление пароля</h2>
+    <input type="email" id="reset-email" placeholder="Введите вашу почту" required/>
+    <button onclick="sendResetCode()">Отправить код</button>
+  </div>
+
+  <div class="auth-container hidden" id="reset-step2">
+    <h2>Введите код</h2>
+    <input type="text" id="reset-code" placeholder="Код из письма" required/>
+    <button onclick="verifyCode()">Продолжить</button>
+  </div>
+
+  <div class="auth-container hidden" id="reset-step3">
+    <h2>Новый пароль</h2>
+    <input type="password" placeholder="Новый пароль" required/>
+    <input type="password" placeholder="Повторите пароль" required/>
+    <button onclick="confirmReset()">Сбросить пароль</button>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
